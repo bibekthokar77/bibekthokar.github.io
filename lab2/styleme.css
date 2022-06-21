@@ -1,0 +1,37 @@
+body {
+  background-color: lightblue;
+}
+
+h1,
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: orchid;
+}
+.course-list li > span {
+  color: brown;
+}
+
+.movie-list a {
+  text-decoration: none;
+}
+.movie-list a:hover {
+  text-decoration: underline;
+}
+
+.movie-detail h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: blueviolet;
+}
+
+.movie-detail p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 800px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  margin: 10px 0;
+  margin-left: 20px;
+}
