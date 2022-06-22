@@ -65,3 +65,12 @@ input {
   margin: 5px 20px;
   text-align: right;
 }
+
+button {
+  background-color: crimson;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
