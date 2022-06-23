@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab 4</title>
+</head>
+
+<body>
+
+    <form action="">
+        <div class="form-header">
+            <h2>
+                Workshop Registration
+            </h2>
+            <div class="more-action">
+                <select name="" id="">
+                    <option value="">More Actions </option>
+                    <option value="">Action A</option>
+                    <option value="">Action B</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="form-left">
+                <div>Register now while seats are available!</div>
+                <div class="form-group">
+                    <label for="first_name">First Name<span>*</span></label>
+                    <input type="text" id="first_name" required pattern="[A-Za-z]{3,8}">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name<span>*</span></label>
+                    <input type="text" id="last_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="company_institution">Company Institution<span>*</span></label>
+                    <input type="text" id="company_institution" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address<span>*</span></label>
+                    <textarea rows="6" id="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="form-group">
+                    <label for="state">State / Province / Region</label>
+                    <select id="state">
+                        <option value="">-Select-</option>
+                        <option value="">California</option>
+                        <option value="">Iowa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option value="">-Select-</option>
+                        <option value="">Nepal</option>
+                        <option value="">USA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">City</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" pattern="[+\-]?[0-9]+" title="Invalid Phone Number">
+                </div>
+            </div>
+            <div class="form-right">
+                <p>Lunch</p>
+                <div class="form-group">
+                    <label for="meal_preference">Meal Preference</label>
+                    <select id="meal_preference">
+                        <option value="">Vegetarian</option>
+                        <option value="">Non-Vegetarian</option>
+                    </select>
+                </div>
+                <p>Payment Details</p>
+                <div class="form-group">
+                    <label for="payment_mode">Payment Mode</label>
+                    <div class="payment-mode">
+                        <div>
+                            <input type="checkbox"> Cash
+                        </div>
+                        <div>
+                            <input type="checkbox"> Cheque
+                        </div>
+                        <div>
+                            <input type="checkbox"> Demand Draft
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cheque_no">DD/Cheque No.</label>
+                    <input type="text" id="cheque_no">
+                </div>
+                <div class="form-group">
+                    <label for="bank_name">Drawn On(Bank Name)</label>
+                    <input type="text" id="bank_name">
+                </div>
+                <div class="form-group">
+                    <label for="payable_at">Payable at</label>
+                    <input type="text" id="payable_at">
+                </div>
+            </div>
+        </div>
+        <div class="form-footer">
+            <button>Submit</button>
+            <button>Reset</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

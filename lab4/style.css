@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  max-width: 1000px;
+  width: 100%;
+  border: 1px solid rgb(170, 202, 189);
+}
+
+.form-header {
+  background-color: rgb(170, 202, 189);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.more-action {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.more-action select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+.form-left {
+  flex-basis: 48%;
+}
+
+.form-right {
+  flex-basis: 48%;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group label span {
+  font-size: 12px;
+  color: red;
+  margin-left: 5px;
+}
+
+.form-group input,
+textarea {
+  width: 200px;
+}
+
+.form-group input[type='checkbox'] {
+  width: fit-content;
+}
+.payment-mode {
+  width: 210px;
+}
+
+p {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form-group select {
+  width: 208px;
+}
+
+.form-footer {
+  padding: 10px 20px;
+  background-color: rgb(227, 227, 227);
+  display: flex;
+  justify-content: center;
+}
+
+.form-footer button {
+  background-color: rgb(132, 167, 152);
+  color: white;
+  font-weight: 500;
+  margin: 0 5px;
+  border: none;
+  padding: 5px 20px;
+}
