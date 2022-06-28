@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function askPassword(ok, fail) {
+            let password = prompt("password?", '');
+            if (password == "rockstar") ok();
+            else fail();
+        }
+
+        let user = {
+            name: 'John',
+            loginOk() {
+                alert(`${this.name} logged in`);
+            },
+            loginFail() {
+                alert(`${this.name} failed to log in`);
+            }
+        };
+
+        // Wrapper Solution
+        // askPassword(() => { user.loginOk() }, () => { user.loginFail() });
+
+        // Call Solution
+        // askPassword(() => { user.loginOk.call(user) }, () => { user.loginFail.call(user) });
+
+        // Bind Solution
+        // askPassword(() => { user.loginOk.bind(user) }, () => { user.loginFail.bind(user) });
+
+        // Apply Solution
+        askPassword(() => { user.loginOk.apply(user)() }, () => { user.loginFail.apply(user)() });
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
