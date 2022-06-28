@@ -1,0 +1,3 @@
+a.The scheduled function will run after the for loop.
+
+b.The  alert is going to show value of i that was calculated by the for loop.
