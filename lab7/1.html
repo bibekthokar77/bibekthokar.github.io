@@ -26,11 +26,11 @@
         // Wrapper Solution
         // askPassword(() => { user.loginOk() }, () => { user.loginFail() });
 
+        // Bind Solution
+        // askPassword(user.loginOk.bind(user),user.loginFail.bind(user));
+
         // Call Solution
         // askPassword(() => { user.loginOk.call(user) }, () => { user.loginFail.call(user) });
-
-        // Bind Solution
-        // askPassword(() => { user.loginOk.bind(user) }, () => { user.loginFail.bind(user) });
 
         // Apply Solution
         askPassword(() => { user.loginOk.apply(user)() }, () => { user.loginFail.apply(user)() });
