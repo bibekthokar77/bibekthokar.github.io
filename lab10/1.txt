@@ -1,0 +1,2 @@
+setImmediate is used instead of using setTimeout when we want to execute some function asynchronously, but as soon as possible and after finishing the current block. 
+It is not guaranteed that the callback to setTimeout function is invoked exactly after the specified delay.

@@ -1,0 +1,12 @@
+setImmediate and process.nextTick are two functions which allows us to control the order
+of execution of our code in the event loop. Both of these functions schedule our callback
+handlers in the event queue. But they are executed at different phases of the event loop.
+The differences between setImmediate and process.nextTick as follow
+1.  setTimeout is processed in the Check handlers phase, while process. nextTick is processed at
+    the event loop and between each phase of the event loop.
+2.  on any given context process.nextTick has higher priority over setImmediate.
+3.  if process.nextTick is called in a given phase, all the callbacks passed to process.nextTick
+    will be resolved before the event loop continues.This will block the event loop and create I/of
+    Starvation if process.nextTick is called recursively.
+4.  unlike process.nextTick, recursive calls to setImmediate won't block the event loop, because every
+    recursive call is executed only on the next event loop iteration.

@@ -1,0 +1,1 @@
+No, Node.js does not have window object. But node.js has its own global scope object called global object.
